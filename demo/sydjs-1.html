@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PEP208 - Arc left, Arc right</title>
+  <meta name="description" content="How to create an arc in JavaScript">
+  <link rel="stylesheet" media="all" href="css/sydjs.css">
+</head>
+<body>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(300,300) scale(1, -1)">
+    <g id="path">
+      <path d="M -100,0 A 1,1 0 0,0 0,0"/>
+    </g>
+    <g id="state">
+      <circle cx="-100" cy="0" r="3"></circle>
+    </g>
+    <g id="closedpath"></g>
+    <g id="axis">
+      <line x1="-9000" y1="0" x2="9000" y2="0"/>
+      <line x1="0" y1="-9000" x2="0" y2="9000"/>
+      <circle cx="0" cy="0" r="3" class="start"/>
+    </g>
+  </g>
+</svg>
+
+<script type='text/javascript' src="js/sydjs-1.js"></script>
+</body>
+</html>
